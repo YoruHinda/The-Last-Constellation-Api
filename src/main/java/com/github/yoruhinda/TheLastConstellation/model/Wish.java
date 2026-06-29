@@ -16,4 +16,10 @@ public class Wish {
     private String category;
     private String completed;
     private LocalDateTime createdAt;
+
+    public Wish(String text, String category) {
+        this.text = text;
+        this.category = category;
+        this.createdAt = LocalDateTime.now();
+    }
 }
